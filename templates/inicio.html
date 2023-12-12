@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <title>Digital Tech</title>
+  <link rel="icon" href="../favicon/favicon.ico">
+  <link rel="stylesheet" href="../CSS/main.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/ca5b005a55.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header id="header">
+    <!-- place navbar here -->
+  </header>
+  <main class="main">
+
+
+    
+  
+    <section class="slider-frame">
+
+      <ul>
+        <li>
+          <img src="../img/slider30.JPG" alt="imagen slider 1">
+        </li>
+        <li>
+          <img src="../img/slider31.JPG" alt="imagen slider 2">
+        </li>
+        <li>
+          <img src="../img/slider32.png" alt="imagen slider3">
+        </li>
+        <li>
+          <img src="../img/slider33.JPG" alt="imagen slider4">
+        </li>
+      </ul>
+
+    </section>
+    <section class="title-section">
+      <div class="h1-title">
+
+        <h1>Soluciones informatica, venta de hardware, software, insumos. </h1>
+
+      </div>
+      
+
+    </section>
+
+    <hr class="mt-2 mb-3"/>
+    <h2 style="text-align: center;" >Elegí tu Pc o notebook ideal para trabajar o jugar</h2>
+    <div id="app">
+
+
+
+
+      <section class="card_contain">
+        <div v-for="elemento in productos">
+
+
+          <div class="card my-3  " style="width: 200px;">
+            <img v-bind:src="elemento.imagen" class="card-img-top" :alt="elemento.nombre">
+            <div class="card-body">
+              <h2 class=" price card-title">$ {{elemento.precio}}</h2>
+              <p class="card-text">{{elemento.nombre}}</p>
+              <div class="buy-button">Comprar</div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+
+
+    </section>
+    </div> 
+    <hr class="mt-2 mb-3"/>
+    <section>
+      <div class="banners  ">
+        <div class="banner ">
+            <img src="../img/banner21.png" alt="  ">
+        </div>
+        <div class="banner">
+            <img src="../img/banner22.png" alt="  ">
+        </div>
+        <div class="banner">
+          <img src="../img/banner23.png" alt="  ">
+      </div>
+      <div class="banner">
+          <img src="../img/banner24.png" alt="  ">
+      </div>
+
+    </div>
+    </section>
+    <section>
+      <div class="container mt-1 mb-5  ">
+
+        <div class="row  ">
+          <div class="col border border-light bg-light mx-2 my-2">
+            <div class="alinear-icono">
+              <iconify-icon icon="iconamoon:delivery-free" width="80"></iconify-icon>
+            </div>
+            <h5 class="card-title text-sm-center">Realizamos envios</h5>
+
+            <p class="card-text my-2 text-sm-center">Conoce nuestros medios de envio disponibles.</p>
+          </div>
+          <div class="col border border-light bg-light mx-2 my-2">
+            <div class="alinear-icono">
+              <iconify-icon icon="mdi:credit-card-lock-outline" width="80"></iconify-icon>
+            </div>
+            <h5 class="card-title text-sm-center">Compra con seguridad</h5>
+
+            <p class="card-text  text-sm-center">Tus datos siempre protegidos.</p>
+          </div>
+          <div class="col border border-light bg-light mx-2 my-2">
+            <div class="alinear-icono">
+              <iconify-icon icon="emojione-monotone:credit-card" width="80"></iconify-icon>
+            </div>
+            <h5 class="card-title text-sm-center">Paga como quieras</h5>
+
+            <p class="card-text text-sm-center ">Recibimos tarjetas de credito, debito, transferncias, QR.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- Boton Go Top regresa arriva         -->
+      <div class="go-top-container">
+        <div class="go-top-btn">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </div>
+  </main>
+  <!-- Bootstrap JavaScript Libraries -->
+  <footer id="footer">
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+  <script src="../js/main.js"></script>
+  <script src="../js/scripts.js"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="../js/productos.js"></script>
+  <script src="../js/carrito.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>
